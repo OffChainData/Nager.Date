@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  holiday-sources:
+    image: nager
+    ports:
+      - 8182:80
+    build:
+      context: ./Src
+      dockerfile: Dockerfile
